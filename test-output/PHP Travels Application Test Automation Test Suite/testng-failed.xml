@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PHP Travels Application Test Automation Test Suite]">
+  <test name="PHP Travels App Test Cases(failed)">
+    <classes>
+      <class name="com.dgsl.phptravels.testcases.RegistrationPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="registerNewUserTest"/>
+          <include name="signUpTextTest"/>
+          <include name="registrationPageTitleTest"/>
+        </methods>
+      </class> <!-- com.dgsl.phptravels.testcases.RegistrationPageTest -->
+      <class name="com.dgsl.phptravels.testcases.AccountPageTest">
+        <methods>
+          <include name="accountPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="logoutLinkTest"/>
+        </methods>
+      </class> <!-- com.dgsl.phptravels.testcases.AccountPageTest -->
+      <class name="com.dgsl.phptravels.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dgsl.phptravels.testcases.LoginPageTest -->
+      <class name="com.dgsl.phptravels.testcases.WelcomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="welcomePageLogoTest"/>
+          <include name="signUpLinkTest"/>
+        </methods>
+      </class> <!-- com.dgsl.phptravels.testcases.WelcomePageTest -->
+    </classes>
+  </test> <!-- PHP Travels App Test Cases(failed) -->
+</suite> <!-- Failed suite [PHP Travels Application Test Automation Test Suite] -->

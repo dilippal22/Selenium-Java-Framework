@@ -1,0 +1,49 @@
+<extentreports>
+	<configuration>
+
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>standard</theme>
+
+		<!-- document encoding -->
+		<!-- default to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for scripts and stylesheet -->
+		<!-- default to https -->
+		<protocol>https</protocol>
+
+		<!-- document title -->
+		<documenttitle>Meritor Test Run Result</documenttitle>
+
+		<!-- report name -->
+		<reportname>Meritor Test Automation Report</reportname>
+
+		<!-- date format -->
+		<dateformat>dd-MM-yyyy</dateformat>
+
+		<!-- time format -->
+		<timeformat>HH:mm:ss</timeformat>
+
+		<!-- location of chart in test view -->
+		<!-- top,bottom -->
+		<testviewchartlocation>bottom</testviewchartlocation>
+
+		<!-- custom javascript -->
+		<script>
+			<![CDATA[
+				$(document).ready(function() {
+		
+			});
+			]]>
+		</script>
+
+		<!-- custom style -->
+		<style>
+			<![CDATA[
+			
+			]]>
+		</style>
+
+	</configuration>
+</extentreports>

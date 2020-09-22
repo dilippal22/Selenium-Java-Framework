@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FreeCRM Application Test suite" parallel="tests"
+	thread-count="2" verbose="3">
+	<listeners>
+		<listener
+			class-name="com.dgsl.freecrm.analyzer.TestTransformer" />
+	</listeners>
+
+	<!-- Chrome Test -->
+	<test name="freeCRM Application Test Case - Chrome"
+		parallel="methods" thread-count="5">
+		<parameter name="browser" value="chrome" />
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.dgsl.freecrm.testcase.WelcomePageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.LoginPageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.HomePageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.DealsPageTest"></class>
+		</classes>
+	</test>
+
+	<!-- Firefox Test -->
+	<test name="freeCRM Application Test Case- Firefox"
+		parallel="methods" thread-count="5">
+		<parameter name="browser" value="firefox" />
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.dgsl.freecrm.testcase.WelcomePageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.LoginPageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.HomePageTest"></class>
+			<class name="com.dgsl.freecrm.testcase.DealsPageTest"></class>
+		</classes>
+	</test>
+
+</suite>

@@ -3,12 +3,14 @@ package com.dgsl.java.covariantreturntype;
 class AnotherClass {
 
 	AnotherClass method() {
+		System.out.println("Parent Class method");
 		return this;
 	}
 }
 
 public class OverridingUsingConvariantReturnType extends AnotherClass {
 	OverridingUsingConvariantReturnType method() {
+		System.out.println("Child Class method");
 		return this;
 	}
 
@@ -17,7 +19,7 @@ public class OverridingUsingConvariantReturnType extends AnotherClass {
 	}
 
 	public static void main(String[] args) {
-		new OverridingUsingConvariantReturnType().method().printMessage();
+		new OverridingUsingConvariantReturnType().method();
 	}
 
 }

@@ -16,8 +16,7 @@ public class ReadPDF {
 	static PDDocument document;
 
 	public static void main(String args[]) throws IOException {
-		File file = new File(System.getProperty("user.dir")
-				+ "\\pdffile\\printTicket.pdf");
+		File file = new File(System.getProperty("user.dir") + "\\pdffile\\printTicket.pdf");
 
 		inputstream = new FileInputStream(file);
 

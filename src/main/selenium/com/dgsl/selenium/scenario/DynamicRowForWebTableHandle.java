@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.dgsl.util.selenium.Constants;
 
-public class DynamicWebTableHandle {
+public class DynamicRowForWebTableHandle {
 
 	static WebDriver driver;
 
@@ -26,26 +26,23 @@ public class DynamicWebTableHandle {
 
 		WebElement table = driver.findElement(By.xpath("//*[@class='dataTable']/tbody"));
 
-		List<WebElement> tableRows = table.findElements(By.tagName("tr"));
+		WebElement tableColumn = table.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[4]"));
 
-		for (int i = 0; i < tableRows.size(); i++) {
+		List<WebElement> columnRows = tableColumn.findElements(By.tagName("tr"));
 
-			WebElement eachRow = tableRows.get(i);
+		// Iterating through rows
+		for (int i = 0; i < columnRows.size(); i++) {
 
-			List<WebElement> rowColumn = eachRow.findElements(By.tagName("td"));
+			WebElement eachRow = columnRows.get(i);
 
-			for (int j = 0; j < rowColumn.size(); j++) {
+			WebElement checkboxElement = eachRow.findElement(By.id("checkbox"));
 
-				if (rowColumn.get(j).getText().trim().equalsIgnoreCase("Vakrangee")) {
-					System.out.println(rowColumn.get(j).getText());
-//					rowColumn.get(j).click();
-
-				}
+			if (!checkboxElement.isDisplayed()) {
+				continue;
+			} else
 				break;
-			}
 
 		}
 
 	}
-
 }

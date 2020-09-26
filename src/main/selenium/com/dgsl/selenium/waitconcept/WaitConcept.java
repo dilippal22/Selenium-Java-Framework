@@ -1,4 +1,4 @@
-package com.dgsl.selenium.wait;
+package com.dgsl.selenium.waitconcept;
 
 import java.time.Duration;
 import java.util.HashMap;

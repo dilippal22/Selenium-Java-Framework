@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.dgsl.selenium.wait.CustomExplicitWaitUtility;
+import com.dgsl.selenium.waitconcept.CustomExplicitWaitUtility;
 import com.dgsl.util.selenium.Constants;
 
 public class DynamicAJAXElementHandle {

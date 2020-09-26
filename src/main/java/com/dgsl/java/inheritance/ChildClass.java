@@ -21,8 +21,8 @@ public class ChildClass extends ParentClass {
 		anotherparentobject.parentClassMethod();
 
 		// Child class reference variable can not refer to parent class object.
-		ChildClass anotherchildobject = new ParentClass();
-		anotherchildobject.childClassMethod();
+//		ChildClass anotherchildobject = new ParentClass();
+//		anotherchildobject.childClassMethod();
 
 	}
 

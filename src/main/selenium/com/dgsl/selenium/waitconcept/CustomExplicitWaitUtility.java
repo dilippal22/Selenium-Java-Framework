@@ -1,4 +1,4 @@
-package com.dgsl.selenium.wait;
+package com.dgsl.selenium.waitconcept;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;

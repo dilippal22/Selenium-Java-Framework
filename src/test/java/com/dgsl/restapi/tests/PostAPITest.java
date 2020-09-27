@@ -64,7 +64,7 @@ public class PostAPITest extends TestBase {
 		// Verify status code
 		int postStatusCode = closeableHttpRespone.getStatusLine().getStatusCode();
 		System.out.println("Status code for POST call is: " + postStatusCode);
-		Assert.assertEquals(postStatusCode, testBase.RESPONSE_STATUS_201);
+		Assert.assertEquals(postStatusCode, testBase.RESPONSE_STATUS_201_CREATED);
 
 		// Converting response string into JSON object
 		String responseString = EntityUtils.toString(closeableHttpRespone.getEntity(), "UTF-8");

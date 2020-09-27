@@ -45,7 +45,7 @@ public class GetAPITest extends TestBase {
 		int getStatusCode = closeableHttpRespone.getStatusLine().getStatusCode();
 		System.out.println("GET request status code is: " + getStatusCode);
 
-		Assert.assertEquals(getStatusCode, RESPONSE_STATUS_200, "Status code is not 200");
+		Assert.assertEquals(getStatusCode, RESPONSE_STATUS_200_OK, "Status code is not 200");
 
 		// To convert response into string
 		String responsString = EntityUtils.toString(closeableHttpRespone.getEntity(), "UTF-8");
@@ -104,7 +104,7 @@ public class GetAPITest extends TestBase {
 		int getStatusCode = closeableHttpRespone.getStatusLine().getStatusCode();
 		System.out.println("GET request status code is: " + getStatusCode);
 
-		Assert.assertEquals(getStatusCode, RESPONSE_STATUS_200, "Status code is not 200");
+		Assert.assertEquals(getStatusCode, RESPONSE_STATUS_200_OK, "Status code is not 200");
 
 		// To convert response into string
 		String responsString = EntityUtils.toString(closeableHttpRespone.getEntity(), "UTF-8");

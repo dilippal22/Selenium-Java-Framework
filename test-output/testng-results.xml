@@ -2,20 +2,16 @@
 <testng-results skipped="8" failed="0" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="PHP Travels Application Test Automation Test Suite" duration-ms="4840" started-at="2020-10-03T12:38:13 IST" finished-at="2020-10-03T12:38:18 IST">
+  <suite name="PHP Travels Application Test Automation Test Suite" duration-ms="22589" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:25 IST">
     <groups>
     </groups>
-    <test name="PHP Travels App Test Cases" duration-ms="4840" started-at="2020-10-03T12:38:13 IST" finished-at="2020-10-03T12:38:18 IST">
+    <test name="PHP Travels App Test Cases" duration-ms="22589" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:25 IST">
       <class name="com.dgsl.phptravels.testcases.WelcomePageTest">
-        <test-method status="SKIP" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="setExtent" is-config="true" duration-ms="-1601708898174" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="setExtent" is-config="true" duration-ms="7" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="setUp" is-config="true" duration-ms="-1601708898224" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="welcomePageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="welcomePageTitleTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="setUp" is-config="true" duration-ms="22289" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:25 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -44,12 +40,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,37 +53,24 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- welcomePageTitleTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="tearDown" is-config="true" duration-ms="-1601708898241" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="setUp" is-config="true" duration-ms="-1601708898255" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="welcomePageLogoTest()[pri:2, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="welcomePageLogoTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="setUp" is-config="true" duration-ms="19349" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:25 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -117,12 +99,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -131,37 +112,146 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="setUp" is-config="true" duration-ms="19358" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:25 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="welcomePageLogoTest()[pri:2, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="welcomePageLogoTest" duration-ms="0" started-at="2020-10-03T18:31:25 IST" finished-at="2020-10-03T18:31:25 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- welcomePageLogoTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="tearDown" is-config="true" duration-ms="-1601708898265" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="tearDown" is-config="true" duration-ms="-1601730085672" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="setUp" is-config="true" duration-ms="-1601708898271" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="signUpLinkTest()[pri:3, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="signUpLinkTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        <test-method status="SKIP" signature="welcomePageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="welcomePageTitleTest" duration-ms="0" started-at="2020-10-03T18:31:25 IST" finished-at="2020-10-03T18:31:25 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -190,12 +280,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -204,43 +293,101 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomePageTitleTest -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="tearDown" is-config="true" duration-ms="-1601730085685" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="signUpLinkTest()[pri:3, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="signUpLinkTest" duration-ms="0" started-at="2020-10-03T18:31:25 IST" finished-at="2020-10-03T18:31:25 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.WelcomePageTest.setUp(WelcomePageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpLinkTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="tearDown" is-config="true" duration-ms="-1601708898297" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="tearDown" is-config="true" duration-ms="-1601730085700" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@7ec7ffd3]" name="endExtent" is-config="true" duration-ms="-1601708898318" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.WelcomePageTest@3e694b3f]" name="endExtent" is-config="true" duration-ms="-1601730085710" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endExtent -->
       </class> <!-- com.dgsl.phptravels.testcases.WelcomePageTest -->
       <class name="com.dgsl.phptravels.testcases.RegistrationPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="setExtent" is-config="true" duration-ms="5" started-at="2020-10-03T12:38:13 IST" finished-at="2020-10-03T12:38:13 IST">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="setExtent" is-config="true" duration-ms="5" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="setUp" is-config="true" duration-ms="4445" started-at="2020-10-03T12:38:13 IST" finished-at="2020-10-03T12:38:18 IST">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="setUp" is-config="true" duration-ms="3248" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -269,12 +416,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -283,29 +429,24 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="signUpTextTest()[pri:2, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="signUpTextTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="setUp" is-config="true" duration-ms="2898" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -334,12 +475,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -348,29 +488,24 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUpTextTest -->
-        <test-method status="SKIP" signature="registrationPageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="registrationPageTitleTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="registrationPageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="registrationPageTitleTest" duration-ms="0" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -399,12 +534,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -413,37 +547,28 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPageTitleTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="tearDown" is-config="true" duration-ms="-1601708898248" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="setUp" is-config="true" duration-ms="-1601730066319" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="tearDown" is-config="true" duration-ms="-1601708898266" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="registerNewUserTest()[pri:3, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="registerNewUserTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="registerNewUserTest()[pri:3, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="registerNewUserTest" duration-ms="0" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -472,12 +597,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -486,51 +610,32 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerNewUserTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="tearDown" is-config="true" duration-ms="-1601708898306" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="tearDown" is-config="true" duration-ms="-1601730066330" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@5b239d7d]" name="endExtent" is-config="true" duration-ms="-1601708898315" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="tearDown" is-config="true" duration-ms="-1601730066340" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endExtent -->
-      </class> <!-- com.dgsl.phptravels.testcases.RegistrationPageTest -->
-      <class name="com.dgsl.phptravels.testcases.AccountPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="setExtent" is-config="true" duration-ms="224" started-at="2020-10-03T12:38:13 IST" finished-at="2020-10-03T12:38:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="setUp" is-config="true" duration-ms="-1601708898226" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="setUp" is-config="true" duration-ms="-1601708898226" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="logoutLinkTest()[pri:2, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="logoutLinkTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="signUpTextTest()[pri:2, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="signUpTextTest" duration-ms="0" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -559,12 +664,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -573,29 +677,38 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutLinkTest -->
-        <test-method status="SKIP" signature="accountPageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="accountPageTitleTest" duration-ms="0" started-at="2020-10-03T12:38:18 IST" finished-at="2020-10-03T12:38:18 IST">
+        </test-method> <!-- signUpTextTest -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="tearDown" is-config="true" duration-ms="-1601730066636" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.RegistrationPageTest@1bb5a082]" name="endExtent" is-config="true" duration-ms="-1601730085706" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endExtent -->
+      </class> <!-- com.dgsl.phptravels.testcases.RegistrationPageTest -->
+      <class name="com.dgsl.phptravels.testcases.AccountPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="setExtent" is-config="true" duration-ms="192" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="setUp" is-config="true" duration-ms="2900" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:06 IST">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
@@ -624,12 +737,11 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
-at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:78)
-at com.dgsl.phptravels.testcases.RegistrationPageTest.setUp(RegistrationPageTest.java:31)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.AccountPageTest.setUp(AccountPageTest.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -638,37 +750,209 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.beforeRun(TestRunner.java:607)
-at org.testng.TestRunner.run(TestRunner.java:578)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="setUp" is-config="true" duration-ms="2900" started-at="2020-10-03T18:31:03 IST" finished-at="2020-10-03T18:31:06 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.AccountPageTest.setUp(AccountPageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="accountPageTitleTest()[pri:1, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="accountPageTitleTest" duration-ms="0" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:06 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.AccountPageTest.setUp(AccountPageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountPageTitleTest -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="tearDown" is-config="true" duration-ms="-1601708898273" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="logoutLinkTest()[pri:2, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="logoutLinkTest" duration-ms="0" started-at="2020-10-03T18:31:06 IST" finished-at="2020-10-03T18:31:06 IST">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableSortedSet.toImmutableSortedSet(Ljava/util/Comparator;)Ljava/util/stream/Collector;
+at org.openqa.selenium.remote.NewSessionPayload.lambda$validate$3(NewSessionPayload.java:191)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.stream.ReferencePipeline$11$1.accept(Unknown Source)
+at java.util.Iterator.forEachRemaining(Unknown Source)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+at org.openqa.selenium.remote.NewSessionPayload.validate(NewSessionPayload.java:207)
+at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:152)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:99)
+at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:69)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:176)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:154)
+at com.dgsl.phptravels.base.TestBase.initBrowser(TestBase.java:69)
+at com.dgsl.phptravels.testcases.AccountPageTest.setUp(AccountPageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutLinkTest -->
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="tearDown" is-config="true" duration-ms="-1601730066309" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="tearDown" is-config="true" duration-ms="-1601708898281" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="tearDown" is-config="true" duration-ms="-1601730066312" started-at="2020-10-03T18:31:06 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@6572421]" name="endExtent" is-config="true" duration-ms="-1601708898312" started-at="2020-10-03T12:38:18 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="endExtent()[pri:0, instance:com.dgsl.phptravels.testcases.AccountPageTest@78691363]" name="endExtent" is-config="true" duration-ms="-1601730085704" started-at="2020-10-03T18:31:25 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endExtent -->

@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [PHP Travels Application Automation Test Suite]">
-  <test name="PHP Travels App Test Cases(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PHP Travels Application Test Automation Test Suite]">
+  <test thread-count="5" name="PHP Travels App Test Cases(failed)" parallel="methods">
     <classes>
-      <class name="com.dgsl.phptravels.testcases.RegistrationPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="registerNewUserTest"/>
-          <include name="signUpTextTest"/>
-          <include name="registrationPageTitleTest"/>
-        </methods>
-      </class> <!-- com.dgsl.phptravels.testcases.RegistrationPageTest -->
       <class name="com.dgsl.phptravels.testcases.AccountPageTest">
         <methods>
+          <include name="tearDown"/>
           <include name="accountPageTitleTest"/>
+          <include name="endExtent"/>
+          <include name="setExtent"/>
           <include name="setUp"/>
           <include name="logoutLinkTest"/>
         </methods>
       </class> <!-- com.dgsl.phptravels.testcases.AccountPageTest -->
-      <class name="com.dgsl.phptravels.testcases.LoginPageTest">
+      <class name="com.dgsl.phptravels.testcases.RegistrationPageTest">
         <methods>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="endExtent"/>
+          <include name="tearDown"/>
+          <include name="registerNewUserTest"/>
+          <include name="signUpTextTest"/>
+          <include name="setExtent"/>
+          <include name="registrationPageTitleTest"/>
         </methods>
-      </class> <!-- com.dgsl.phptravels.testcases.LoginPageTest -->
+      </class> <!-- com.dgsl.phptravels.testcases.RegistrationPageTest -->
       <class name="com.dgsl.phptravels.testcases.WelcomePageTest">
         <methods>
+          <include name="setExtent"/>
+          <include name="welcomePageTitleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="welcomePageLogoTest"/>
           <include name="signUpLinkTest"/>
+          <include name="endExtent"/>
         </methods>
       </class> <!-- com.dgsl.phptravels.testcases.WelcomePageTest -->
     </classes>
   </test> <!-- PHP Travels App Test Cases(failed) -->
-</suite> <!-- Failed suite [PHP Travels Application Automation Test Suite] -->
+</suite> <!-- Failed suite [PHP Travels Application Test Automation Test Suite] -->

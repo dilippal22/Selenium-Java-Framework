@@ -2,11 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="PHP Travels Application Test Automation Test Suite">
-	<test name="PHP Travels App Test Cases">
+	<test name="PHP Travels App Test Cases" parallel="methods"
+		thread-count="5">
 		<classes>
-			<class name="com.dgsl.phptravels.testcases.WelcomePageTest"/>
-			<class name="com.dgsl.phptravels.testcases.RegistrationPageTest"/>
-			<class name="com.dgsl.phptravels.testcases.AccountPageTest"/>
+			<class name="com.dgsl.phptravels.testcases.WelcomePageTest" />
+			<class
+				name="com.dgsl.phptravels.testcases.RegistrationPageTest" />
+			<class name="com.dgsl.phptravels.testcases.AccountPageTest" />
 		</classes>
 	</test>
 </suite>

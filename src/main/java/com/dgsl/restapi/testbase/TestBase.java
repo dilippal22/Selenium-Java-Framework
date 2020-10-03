@@ -30,8 +30,7 @@ public class TestBase {
 		file = new File(Constants.CONFIG_FILE);
 		try {
 			prop = new Properties();
-			inputStream = new FileInputStream(System.getProperty("user.dir")
-					+ "\\src\\main\\java\\com\\dgsl\\restapi\\config\\config.properties");
+			inputStream = new FileInputStream(Constants.CONFIG_FILE);
 			prop.load(inputStream);
 		} catch (FileNotFoundException a) {
 			a.printStackTrace();

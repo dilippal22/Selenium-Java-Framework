@@ -10,10 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.dgsl.phptravels.util.Constants;
-import com.dgsl.phptravels.util.WebEventListener;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -26,8 +24,6 @@ public class TestBase {
 
 	protected static WebDriver driver;
 	protected static Properties prop;
-	protected static EventFiringWebDriver e_driver;
-	protected static WebEventListener eventListener;
 
 	// Constructor
 	public TestBase() {
@@ -82,13 +78,6 @@ public class TestBase {
 				WebDriverManager.iedriver().setup();
 				driver = new InternetExplorerDriver();
 			}
-
-			e_driver = new EventFiringWebDriver(driver);
-			// Creating object of EventListener to register it with EventFiringWebDriver
-			eventListener = new WebEventListener();
-			// Registering object of WebEventListener() with EventFiringWebDriver()
-			e_driver.register(eventListener);
-			driver = e_driver;
 
 			// Maximize the Launched Browser
 			driver.manage().window().maximize();

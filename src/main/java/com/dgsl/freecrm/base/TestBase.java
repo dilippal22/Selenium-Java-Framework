@@ -12,13 +12,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.dgsl.freecrm.util.Constants;
 import com.dgsl.freecrm.util.TestUtil;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static File file;
 	public static FileInputStream inputstream;
+	
+	// Constructor
+		public TestBase() {
+			if (driver == null) {
+				initConfig();
+			}
+		}
 
-	public TestBase() {
+	public void initConfig() {
 		file = new File(Constants.CONFIG_FILE);
 		try {
 			inputstream = new FileInputStream(file);
@@ -32,10 +41,10 @@ public class TestBase {
 	public static void initBrowser() {
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", Constants.GECKO_DRIVER);
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chromer.driver", Constants.CHROME_DRIVER);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else {
 			System.out.println("Invalid browser name");

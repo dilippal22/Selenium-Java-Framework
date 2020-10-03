@@ -9,10 +9,10 @@ import com.dgsl.phptravels.base.TestBase;
 public class WelcomePage extends TestBase{
 	
 	@FindBy(xpath = "//ul[@class='dropdown-menu']/li[2]//a")
-	private WebElement signUpBtn;
+	private static WebElement signUpBtn;
 	
 	@FindBy(xpath = "//img[@class='logo']")
-	private WebElement welcomePageLogo;
+	private static WebElement welcomePageLogo;
 	
 	//Initializing Page objects
 	public WelcomePage(){
@@ -20,15 +20,15 @@ public class WelcomePage extends TestBase{
 	}
 	
 	//Actions:
-	public String validateWelcomPageTitle(){
+	public static String validateWelcomPageTitle(){
 		return driver.getTitle();
 	}
 	
-	public boolean validateWelcomePageLogo(){
+	public static boolean validateWelcomePageLogo(){
 		return welcomePageLogo.isDisplayed();
 	}
 	
-	public RegistrationPage clickOnSignupLink(){
+	public static RegistrationPage clickOnSignupLink(){
 		signUpBtn.click();
 		return new RegistrationPage();
 	}

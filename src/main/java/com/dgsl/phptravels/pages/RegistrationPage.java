@@ -11,35 +11,35 @@ public class RegistrationPage extends TestBase {
 	
 	@FindBy(xpath = "//div[text()='Sign Up']")
 	@CacheLookup
-	private WebElement signUpText;
+	private static WebElement signUpText;
 	
 	@FindBy(id = "//input[@placeholder='First Name']")
 	@CacheLookup
-	private WebElement firstName;
+	private static WebElement firstName;
 	
 	@FindBy(id = "//input[@placeholder='Last Name']")
 	@CacheLookup
-	private WebElement lastName;
+	private static WebElement lastName;
 	
 	@FindBy(id = "//input[@placeholder='Mobile Number']")
 	@CacheLookup
-	private WebElement mobileNumber;
+	private static WebElement mobileNumber;
 	
 	@FindBy(id = "//input[@placeholder='Email']")
 	@CacheLookup
-	private WebElement email;
+	private static WebElement email;
 	
 	@FindBy(id = "//input[@placeholder='Password']")
 	@CacheLookup
-	private WebElement password;
+	private static WebElement password;
 	
 	@FindBy(id = "//input[@placeholder='Confirm Password']")
 	@CacheLookup
-	private WebElement confirmPassword;
+	private static WebElement confirmPassword;
 	
 	@FindBy(id = "//div[@class='form-group']/button")
 	@CacheLookup
-	private WebElement signUpBtn;
+	private static WebElement signUpBtn;
 	
 	
 	//Initializing page objects
@@ -47,15 +47,15 @@ public class RegistrationPage extends TestBase {
 		PageFactory.initElements(driver, this);
 		}
 	
-	public String validateRegistrationPageTitle(){
+	public static String validateRegistrationPageTitle(){
 		return driver.getTitle();
 		}	
 	
-	public boolean validateSignUpText(){
+	public static boolean validateSignUpText(){
 		return signUpText.isDisplayed();
 		}
 	
-	public AccountPage registerNewUser(String ftName, String ltName, long mobNumber, String mail, String pwd, String confirmPwd){
+	public static AccountPage registerNewUser(String ftName, String ltName, long mobNumber, String mail, String pwd, String confirmPwd){
 		firstName.sendKeys(ftName);
 		lastName.sendKeys(ltName);
 		mobileNumber.sendKeys("mobNumber");

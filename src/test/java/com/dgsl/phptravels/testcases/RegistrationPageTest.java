@@ -39,14 +39,14 @@ public class RegistrationPageTest extends TestBase {
 	@Test(priority = 1)
 	public void registrationPageTitleTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("registrationPageTitleTest");
-		String registrationTitle = registrationpage.validateRegistrationPageTitle();
+		String registrationTitle = RegistrationPage.validateRegistrationPageTitle();
 		Assert.assertEquals(registrationTitle, "Register");
 	}
 
 	@Test(priority = 2)
 	public void signUpTextTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("signUpTextTest");
-		boolean signUpTextFlag = registrationpage.validateSignUpText();
+		boolean signUpTextFlag = RegistrationPage.validateSignUpText();
 		Assert.assertTrue(signUpTextFlag, "SignUp Text is missing");
 	}
 
@@ -54,7 +54,7 @@ public class RegistrationPageTest extends TestBase {
 	public void registerNewUserTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("registerNewUserTest");
 		long mob_number = Long.parseLong(prop.getProperty("mobilenumber"));
-		registrationpage.registerNewUser(prop.getProperty("firstname"), prop.getProperty("lastname"), mob_number,
+		RegistrationPage.registerNewUser(prop.getProperty("firstname"), prop.getProperty("lastname"), mob_number,
 				prop.getProperty("email"), prop.getProperty("password"), prop.getProperty("confmpassword"));
 	}
 

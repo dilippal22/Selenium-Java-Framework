@@ -12,16 +12,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.dgsl.phptravels.base.TestBase;
-import com.dgsl.phptravels.pages.AccountPage;
 import com.dgsl.phptravels.pages.LoginPage;
 import com.dgsl.phptravels.util.TestUtil;
 
 public class LoginPageTest extends TestBase {
-	
+
 	Logger log = Logger.getLogger(LoginPageTest.class);
 
 	LoginPage loginpage;
-	AccountPage accountpage;
 
 	public LoginPageTest() {
 		super();
@@ -41,14 +39,14 @@ public class LoginPageTest extends TestBase {
 	@Test
 	public void loginPageTitleTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("loginPageTitleTest");
-		String loginTitle = loginpage.validateLoginPageTitle();
+		String loginTitle = LoginPage.validateLoginPageTitle();
 		Assert.assertEquals(loginTitle, "Login");
 	}
 
 	@Test(dataProvider = "LoginTestData")
 	public void loginTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("loginTest");
-		loginpage.getLogin(prop.getProperty("username"), prop.getProperty("password"));
+		LoginPage.getLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@AfterMethod

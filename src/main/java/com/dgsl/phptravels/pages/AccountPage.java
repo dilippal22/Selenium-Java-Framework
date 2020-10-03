@@ -12,23 +12,23 @@ public class AccountPage extends TestBase {
 	/*
 	 * @FindBy(xpath = "//li[@class='']/a")
 	 * 
-	 * @CacheLookup private WebElement userName;
+	 * @CacheLookup private static WebElement userName;
 	 */
 
 	@FindBy(xpath = "//ul[@class='dropdown-menu']/li[2]//a")
 	@CacheLookup
-	private WebElement logoutLink;
+	private static WebElement logoutLink;
 
 	// Initializing Page Objects
 	public AccountPage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	public String validateAccountPageTitle() {
+	public static String validateAccountPageTitle() {
 		return driver.getTitle();
 	}
 
-	public LoginPage clickOnLogoutLink() {
+	public static LoginPage clickOnLogoutLink() {
 		logoutLink.click();
 		return new LoginPage();
 	}

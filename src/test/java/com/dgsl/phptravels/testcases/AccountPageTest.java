@@ -41,14 +41,14 @@ public class AccountPageTest extends TestBase {
 	@Test(priority = 1)
 	public void accountPageTitleTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("accountPageTitleTest");
-		String accountTitle = accountpage.validateAccountPageTitle();
+		String accountTitle = AccountPage.validateAccountPageTitle();
 		Assert.assertEquals(accountTitle, "My Account");
 	}
 
 	@Test(priority = 2)
 	public void logoutLinkTest() {
 		TestUtil.extentTest = TestUtil.report.startTest("logoutLinkTest");
-		loginpage = accountpage.clickOnLogoutLink();
+		AccountPage.clickOnLogoutLink();
 	}
 
 	@AfterMethod

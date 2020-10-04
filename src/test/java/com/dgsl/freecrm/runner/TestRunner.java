@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
 			plugin = {"pretty","html:test-output/FreeCRMReport.html", "junit:junit_xml/FreeCRM.xml"},
 			monochrome = true,
 			strict = true,
-			dryRun = true
-//			tags = {"@SmokeTest", "@RegressionTest", "@End2End"}
+			dryRun = true,
+			tags = {"~@SmokeTest", "~@RegressionTest", "~@End2End"}
 			)
 
 public class TestRunner {

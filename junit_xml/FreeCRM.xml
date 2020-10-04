@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
 <testcase classname="Free CRM HomePage Feature" name="Verify user can access the home page" time="0">
 <system-out><![CDATA[Given user is on home page..................................................skipped
 When user verify title of the page..........................................skipped
 Then user verify logo of the page...........................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Login Feature" name="Verify user can login into the application" time="0">
-<system-out><![CDATA[Given user launch and enter url.............................................skipped
-When title of the page is FreeCRM...........................................skipped
-Then user logs into the application.........................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

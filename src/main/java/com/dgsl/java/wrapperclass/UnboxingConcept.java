@@ -4,25 +4,23 @@ Write a program showing example of Unboxing.*/
 
 package com.dgsl.java.wrapperclass;
 
-import java.util.ArrayList;
-
 public class UnboxingConcept {
 
 	public static void main(String[] args) {
 
 		Character obj = 'd';
 
-		// Unboxing - Converting Character object to primitive data type
-		char d = 'g';
+		// Unboxing - Converting Character object to primitive data type - Example 1
+		char d = obj;
+		System.out.println("Output after unboxing - Example 1: " + d);
 
-		// unboxing Example
-		ArrayList<Character> arrayList = new ArrayList<Character>();
-		arrayList.add('e');
+		// Unboxing - Example 2
+		Integer i = new Integer(50);
 
-		// Unboxing because get method returns an Integer object
-		char num = arrayList.get(0);
+		// Converted wrapper class into corresponding primitive data type
+		int b = i;
+		System.out.println("Output after unboxing - Example 2: " + b);
 
-		System.out.println(num);
 	}
 
 }

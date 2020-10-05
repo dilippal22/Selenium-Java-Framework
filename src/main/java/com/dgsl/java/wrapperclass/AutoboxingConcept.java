@@ -5,8 +5,6 @@ Write a program showing example of Autoboxing.*/
 
 package com.dgsl.java.wrapperclass;
 
-import java.util.ArrayList;
-
 public class AutoboxingConcept {
 
 	public static void main(String[] args) {
@@ -14,17 +12,16 @@ public class AutoboxingConcept {
 		char ch = 's';
 
 		// Autoboxing - converting from primitive data type to the object of
-		// wrapper class
+		// wrapper class - Example 1
 		Character obj = ch;
+		System.out.println("Output after autoboxing - Example 1: " + obj);
 
-		// Autoboxing Example
-		ArrayList<Character> arrayList = new ArrayList<Character>();
+		// Autoboxing - Example 2
+		int a = 50;
 
-		// Autoxing because ArrayList and vector stores only objects
-		arrayList.add('g');
-
-		// Printing values from object
-		System.out.println(arrayList.get(0));
+		// Converted primitive data type into corresponding wrapper class
+		Integer b = new Integer(a);
+		System.out.println("Output after autoboxing - Example 2: " + b);
 
 	}
 
